@@ -5,10 +5,18 @@ from typing import Any
 
 import pytest
 import pytest_socket
+from pytest_homeassistant_custom_component.syrupy import HomeAssistantSnapshotExtension
+from syrupy.assertion import SnapshotAssertion
 
 from tests.fake_warp import FakeWarp, load_fixture, patch
 
 FakeWarpFactory = Callable[..., Awaitable[FakeWarp]]
+
+
+@pytest.fixture
+def snapshot(snapshot: SnapshotAssertion) -> SnapshotAssertion:
+    """Use Home Assistant's snapshot extension regardless of plugin load order."""
+    return snapshot.use_extension(HomeAssistantSnapshotExtension)
 
 
 @pytest.fixture(autouse=True)
