@@ -1,0 +1,175 @@
+# serializer version: 1
+# name: test_snapshot[warp2][event.warp2_charger_pro_nfc_tag-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <EventEntityCapabilityAttribute.EVENT_TYPES: 'event_types'>: list([
+        'scanned',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'event',
+    'entity_category': None,
+    'entity_id': 'event.warp2_charger_pro_nfc_tag',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'NFC tag',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'NFC tag',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'nfc_tag',
+    'unique_id': '2jEx_nfc_tag',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[warp2][event.warp2_charger_pro_nfc_tag-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EventEntityStateAttribute.EVENT_TYPE: 'event_type'>: None,
+      <EventEntityCapabilityAttribute.EVENT_TYPES: 'event_types'>: list([
+        'scanned',
+      ]),
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp2-charger-pro NFC tag',
+    }),
+    'context': <ANY>,
+    'entity_id': 'event.warp2_charger_pro_nfc_tag',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---
+# name: test_snapshot[warp3][event.warp3_charger_pro_nfc_tag-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <EventEntityCapabilityAttribute.EVENT_TYPES: 'event_types'>: list([
+        'scanned',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'event',
+    'entity_category': None,
+    'entity_id': 'event.warp3_charger_pro_nfc_tag',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'NFC tag',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'NFC tag',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'nfc_tag',
+    'unique_id': '2jEx_nfc_tag',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[warp3][event.warp3_charger_pro_nfc_tag-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EventEntityStateAttribute.EVENT_TYPE: 'event_type'>: None,
+      <EventEntityCapabilityAttribute.EVENT_TYPES: 'event_types'>: list([
+        'scanned',
+      ]),
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp3-charger-pro NFC tag',
+    }),
+    'context': <ANY>,
+    'entity_id': 'event.warp3_charger_pro_nfc_tag',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---
+# name: test_snapshot[warp4][event.warp4_charger_pro_nfc_tag-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <EventEntityCapabilityAttribute.EVENT_TYPES: 'event_types'>: list([
+        'scanned',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'event',
+    'entity_category': None,
+    'entity_id': 'event.warp4_charger_pro_nfc_tag',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'NFC tag',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'NFC tag',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'nfc_tag',
+    'unique_id': '2c7P_nfc_tag',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[warp4][event.warp4_charger_pro_nfc_tag-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EventEntityStateAttribute.EVENT_TYPE: 'event_type'>: None,
+      <EventEntityCapabilityAttribute.EVENT_TYPES: 'event_types'>: list([
+        'scanned',
+      ]),
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp4-charger-pro NFC tag',
+    }),
+    'context': <ANY>,
+    'entity_id': 'event.warp4_charger_pro_nfc_tag',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unknown',
+  })
+# ---

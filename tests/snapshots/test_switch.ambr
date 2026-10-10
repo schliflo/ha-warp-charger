@@ -1,0 +1,551 @@
+# serializer version: 1
+# name: test_snapshot[warp2][switch.warp2_charger_pro_auto_start_charging-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.warp2_charger_pro_auto_start_charging',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Auto start charging',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Auto start charging',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'auto_start_charging',
+    'unique_id': '2jEx_auto_start_charging',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[warp2][switch.warp2_charger_pro_auto_start_charging-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp2-charger-pro Auto start charging',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.warp2_charger_pro_auto_start_charging',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_snapshot[warp2][switch.warp2_charger_pro_boost_mode-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.warp2_charger_pro_boost_mode',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Boost mode',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Boost mode',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'boost_mode',
+    'unique_id': '2jEx_boost_mode',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[warp2][switch.warp2_charger_pro_boost_mode-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp2-charger-pro Boost mode',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.warp2_charger_pro_boost_mode',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_snapshot[warp2][switch.warp2_charger_pro_external_clear_on_disconnect-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.warp2_charger_pro_external_clear_on_disconnect',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'External clear on disconnect',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'External clear on disconnect',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'external_clear_on_disconnect',
+    'unique_id': '2jEx_external_clear_on_disconnect',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[warp2][switch.warp2_charger_pro_external_clear_on_disconnect-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp2-charger-pro External clear on disconnect',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.warp2_charger_pro_external_clear_on_disconnect',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_snapshot[warp3][switch.warp3_charger_pro_auto_start_charging-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.warp3_charger_pro_auto_start_charging',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Auto start charging',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Auto start charging',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'auto_start_charging',
+    'unique_id': '2jEx_auto_start_charging',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[warp3][switch.warp3_charger_pro_auto_start_charging-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp3-charger-pro Auto start charging',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.warp3_charger_pro_auto_start_charging',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_snapshot[warp3][switch.warp3_charger_pro_boost_mode-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.warp3_charger_pro_boost_mode',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Boost mode',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Boost mode',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'boost_mode',
+    'unique_id': '2jEx_boost_mode',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[warp3][switch.warp3_charger_pro_boost_mode-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp3-charger-pro Boost mode',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.warp3_charger_pro_boost_mode',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_snapshot[warp3][switch.warp3_charger_pro_external_clear_on_disconnect-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.warp3_charger_pro_external_clear_on_disconnect',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'External clear on disconnect',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'External clear on disconnect',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'external_clear_on_disconnect',
+    'unique_id': '2jEx_external_clear_on_disconnect',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[warp3][switch.warp3_charger_pro_external_clear_on_disconnect-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp3-charger-pro External clear on disconnect',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.warp3_charger_pro_external_clear_on_disconnect',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_snapshot[warp3][switch.warp3_charger_pro_phase_auto_switch-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.warp3_charger_pro_phase_auto_switch',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Phase auto switch',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Phase auto switch',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'phase_auto_switch',
+    'unique_id': '2jEx_phase_auto_switch',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[warp3][switch.warp3_charger_pro_phase_auto_switch-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp3-charger-pro Phase auto switch',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.warp3_charger_pro_phase_auto_switch',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_snapshot[warp4][switch.warp4_charger_pro_auto_start_charging-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.warp4_charger_pro_auto_start_charging',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Auto start charging',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Auto start charging',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'auto_start_charging',
+    'unique_id': '2c7P_auto_start_charging',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[warp4][switch.warp4_charger_pro_auto_start_charging-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp4-charger-pro Auto start charging',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.warp4_charger_pro_auto_start_charging',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_snapshot[warp4][switch.warp4_charger_pro_boost_mode-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.warp4_charger_pro_boost_mode',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Boost mode',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Boost mode',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'boost_mode',
+    'unique_id': '2c7P_boost_mode',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[warp4][switch.warp4_charger_pro_boost_mode-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp4-charger-pro Boost mode',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.warp4_charger_pro_boost_mode',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_snapshot[warp4][switch.warp4_charger_pro_external_clear_on_disconnect-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.warp4_charger_pro_external_clear_on_disconnect',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'External clear on disconnect',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'External clear on disconnect',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'external_clear_on_disconnect',
+    'unique_id': '2c7P_external_clear_on_disconnect',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[warp4][switch.warp4_charger_pro_external_clear_on_disconnect-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp4-charger-pro External clear on disconnect',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.warp4_charger_pro_external_clear_on_disconnect',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_snapshot[warp4][switch.warp4_charger_pro_phase_auto_switch-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.warp4_charger_pro_phase_auto_switch',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Phase auto switch',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Phase auto switch',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'phase_auto_switch',
+    'unique_id': '2c7P_phase_auto_switch',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[warp4][switch.warp4_charger_pro_phase_auto_switch-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp4-charger-pro Phase auto switch',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.warp4_charger_pro_phase_auto_switch',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---

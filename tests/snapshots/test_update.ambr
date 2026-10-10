@@ -1,0 +1,253 @@
+# serializer version: 1
+# name: test_snapshot[warp2][update.warp2_charger_pro_firmware-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'update',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'update.warp2_charger_pro_firmware',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Firmware',
+    'options': dict({
+    }),
+    'original_device_class': <UpdateDeviceClass.FIRMWARE: 'firmware'>,
+    'original_icon': None,
+    'original_name': 'Firmware',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': <UpdateEntityFeature: 5>,
+    'translation_key': 'firmware',
+    'unique_id': '2jEx_firmware',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[warp2][update.warp2_charger_pro_firmware-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <UpdateEntityStateAttribute.AUTO_UPDATE: 'auto_update'>: False,
+      <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'firmware',
+      <UpdateEntityStateAttribute.DISPLAY_PRECISION: 'display_precision'>: 0,
+      <EntityStateAttribute.ENTITY_PICTURE: 'entity_picture'>: '/api/brands/integration/tinkerforge_warp/icon.png',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp2-charger-pro Firmware',
+      <UpdateEntityStateAttribute.IN_PROGRESS: 'in_progress'>: False,
+      <UpdateEntityStateAttribute.INSTALLED_VERSION: 'installed_version'>: '2.12.1+6a4f9137',
+      <UpdateEntityStateAttribute.LATEST_VERSION: 'latest_version'>: '2.12.1+6a4f9137',
+      <UpdateEntityStateAttribute.RELEASE_SUMMARY: 'release_summary'>: None,
+      <UpdateEntityStateAttribute.RELEASE_URL: 'release_url'>: None,
+      <UpdateEntityStateAttribute.SKIPPED_VERSION: 'skipped_version'>: None,
+      <EntityStateAttribute.SUPPORTED_FEATURES: 'supported_features'>: <UpdateEntityFeature: 5>,
+      <UpdateEntityStateAttribute.TITLE: 'title'>: None,
+      <UpdateEntityStateAttribute.UPDATE_PERCENTAGE: 'update_percentage'>: None,
+    }),
+    'context': <ANY>,
+    'entity_id': 'update.warp2_charger_pro_firmware',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_snapshot[warp3][update.warp3_charger_pro_firmware-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'update',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'update.warp3_charger_pro_firmware',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Firmware',
+    'options': dict({
+    }),
+    'original_device_class': <UpdateDeviceClass.FIRMWARE: 'firmware'>,
+    'original_icon': None,
+    'original_name': 'Firmware',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': <UpdateEntityFeature: 5>,
+    'translation_key': 'firmware',
+    'unique_id': '2jEx_firmware',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[warp3][update.warp3_charger_pro_firmware-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <UpdateEntityStateAttribute.AUTO_UPDATE: 'auto_update'>: False,
+      <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'firmware',
+      <UpdateEntityStateAttribute.DISPLAY_PRECISION: 'display_precision'>: 0,
+      <EntityStateAttribute.ENTITY_PICTURE: 'entity_picture'>: '/api/brands/integration/tinkerforge_warp/icon.png',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp3-charger-pro Firmware',
+      <UpdateEntityStateAttribute.IN_PROGRESS: 'in_progress'>: False,
+      <UpdateEntityStateAttribute.INSTALLED_VERSION: 'installed_version'>: '2.12.1+6a4f9137',
+      <UpdateEntityStateAttribute.LATEST_VERSION: 'latest_version'>: '2.13.5+6abe4b1e',
+      <UpdateEntityStateAttribute.RELEASE_SUMMARY: 'release_summary'>: None,
+      <UpdateEntityStateAttribute.RELEASE_URL: 'release_url'>: None,
+      <UpdateEntityStateAttribute.SKIPPED_VERSION: 'skipped_version'>: None,
+      <EntityStateAttribute.SUPPORTED_FEATURES: 'supported_features'>: <UpdateEntityFeature: 5>,
+      <UpdateEntityStateAttribute.TITLE: 'title'>: None,
+      <UpdateEntityStateAttribute.UPDATE_PERCENTAGE: 'update_percentage'>: None,
+    }),
+    'context': <ANY>,
+    'entity_id': 'update.warp3_charger_pro_firmware',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_snapshot[warp4][update.warp4_charger_pro_firmware-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'update',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'update.warp4_charger_pro_firmware',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Firmware',
+    'options': dict({
+    }),
+    'original_device_class': <UpdateDeviceClass.FIRMWARE: 'firmware'>,
+    'original_icon': None,
+    'original_name': 'Firmware',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': <UpdateEntityFeature: 5>,
+    'translation_key': 'firmware',
+    'unique_id': '2c7P_firmware',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[warp4][update.warp4_charger_pro_firmware-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <UpdateEntityStateAttribute.AUTO_UPDATE: 'auto_update'>: False,
+      <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'firmware',
+      <UpdateEntityStateAttribute.DISPLAY_PRECISION: 'display_precision'>: 0,
+      <EntityStateAttribute.ENTITY_PICTURE: 'entity_picture'>: '/api/brands/integration/tinkerforge_warp/icon.png',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp4-charger-pro Firmware',
+      <UpdateEntityStateAttribute.IN_PROGRESS: 'in_progress'>: False,
+      <UpdateEntityStateAttribute.INSTALLED_VERSION: 'installed_version'>: '2.12.1+6a4f9137',
+      <UpdateEntityStateAttribute.LATEST_VERSION: 'latest_version'>: '2.13.5+6abe4b1e',
+      <UpdateEntityStateAttribute.RELEASE_SUMMARY: 'release_summary'>: None,
+      <UpdateEntityStateAttribute.RELEASE_URL: 'release_url'>: None,
+      <UpdateEntityStateAttribute.SKIPPED_VERSION: 'skipped_version'>: None,
+      <EntityStateAttribute.SUPPORTED_FEATURES: 'supported_features'>: <UpdateEntityFeature: 5>,
+      <UpdateEntityStateAttribute.TITLE: 'title'>: None,
+      <UpdateEntityStateAttribute.UPDATE_PERCENTAGE: 'update_percentage'>: None,
+    }),
+    'context': <ANY>,
+    'entity_id': 'update.warp4_charger_pro_firmware',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_snapshot[wem2][update.wem2_energy_manager_firmware-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'update',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'update.wem2_energy_manager_firmware',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Firmware',
+    'options': dict({
+    }),
+    'original_device_class': <UpdateDeviceClass.FIRMWARE: 'firmware'>,
+    'original_icon': None,
+    'original_name': 'Firmware',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': <UpdateEntityFeature: 5>,
+    'translation_key': 'firmware',
+    'unique_id': '2gNm_firmware',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[wem2][update.wem2_energy_manager_firmware-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <UpdateEntityStateAttribute.AUTO_UPDATE: 'auto_update'>: False,
+      <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'firmware',
+      <UpdateEntityStateAttribute.DISPLAY_PRECISION: 'display_precision'>: 0,
+      <EntityStateAttribute.ENTITY_PICTURE: 'entity_picture'>: '/api/brands/integration/tinkerforge_warp/icon.png',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'wem2-energy-manager Firmware',
+      <UpdateEntityStateAttribute.IN_PROGRESS: 'in_progress'>: False,
+      <UpdateEntityStateAttribute.INSTALLED_VERSION: 'installed_version'>: '2.9.2+6a4f9137',
+      <UpdateEntityStateAttribute.LATEST_VERSION: 'latest_version'>: '2.9.2+6a4f9137',
+      <UpdateEntityStateAttribute.RELEASE_SUMMARY: 'release_summary'>: None,
+      <UpdateEntityStateAttribute.RELEASE_URL: 'release_url'>: None,
+      <UpdateEntityStateAttribute.SKIPPED_VERSION: 'skipped_version'>: None,
+      <EntityStateAttribute.SUPPORTED_FEATURES: 'supported_features'>: <UpdateEntityFeature: 5>,
+      <UpdateEntityStateAttribute.TITLE: 'title'>: None,
+      <UpdateEntityStateAttribute.UPDATE_PERCENTAGE: 'update_percentage'>: None,
+    }),
+    'context': <ANY>,
+    'entity_id': 'update.wem2_energy_manager_firmware',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---

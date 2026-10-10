@@ -1,0 +1,147 @@
+{"topic": "info/keep_alive", "payload": {"uptime": 1234567}}
+{"topic": "info/modules", "payload": {"task_scheduler": true, "event_log": true, "api": true, "web_server": true, "rtc": true, "esp32_common": true, "esp32_ethernet_brick": true, "watchdog": true, "uptime_tracker": true, "debug_protocol": true, "network": true, "ntp": true, "ethernet": true, "wifi": true, "network_helper": true, "wireguard": true, "mqtt": true, "mqtt_auto_discovery": true, "http": true, "ws": true, "event": true, "system": true, "firmware_update": true, "automation": true, "charge_manager": true, "cm_networking": true, "network_lib": true, "modbus_tcp_client": true, "modbus_tcp_debug": true, "eebus": true, "rct_power_client": true, "sun_spec": true, "meters": true, "meters_em": true, "meters_api": true, "meters_modbus_tcp": true, "meters_sun_spec": true, "meters_sma_speedwire": true, "meters_rct_power": true, "meters_sonnenbatterie": true, "meters_legacy_api": true, "batteries": true, "batteries_modbus_tcp": true, "batteries_sun_spec": true, "battery_control": true, "em_v2": true, "em_common": true, "em_energy_analysis": true, "power_manager": true, "em_rtc": true, "em_sdcard": true, "front_panel": true, "day_ahead_prices": true, "temperatures": true, "solar_forecast": true, "heating": true, "charge_tracker": true, "users": true, "nfc": true, "charge_authorization": true, "hidden_proxy": true, "device_name": true, "coredump": true, "pwa": true, "certs": true, "remote_access": true, "eco": true, "p14a_enwg": true, "io_scheduler": true, "evse_v2": false, "evse_common": false, "nfc_bricklet": false}}
+{"topic": "info/features", "payload": ["ethernet", "firmware_update", "rtc", "energy_manager", "meters", "front_panel"]}
+{"topic": "info/version", "payload": {"firmware": "2.9.2+6a4f9137", "config": "2.9.1", "config_type": "wem"}}
+{"topic": "info/name", "payload": {"name": "wem2-2gNm", "type": "wem2", "display_type": "WARP Energy Manager 2.0", "uid": "2gNm"}}
+{"topic": "info/display_name", "payload": {"display_name": "wem2-energy-manager"}}
+{"topic": "info/last_boots", "payload": [{"reset_reason": 3, "boot_count": 1, "timestamp_min": 29600000, "uptime": 8944, "uptime_overflows": 0}]}
+{"topic": "event_log/boot_id", "payload": {"boot_id": 2423635683}}
+{"topic": "rtc/time", "payload": {"year": 2026, "month": 10, "day": 9, "hour": 20, "minute": 4, "second": 43, "weekday": 5}}
+{"topic": "rtc/config", "payload": {"auto_sync": true}}
+{"topic": "network/config", "payload": {"hostname": "wem2-energy-manager", "enable_mdns": true, "transport_mode": 2, "web_server_port": 80, "web_server_port_secure": 443, "cert_id": -1, "key_id": -1}}
+{"topic": "ntp/config", "payload": {"enable": true, "use_dhcp": true, "timezone": "Europe/Berlin", "server": "**REDACTED**", "server2": "**REDACTED**"}}
+{"topic": "ntp/state", "payload": {"synced": true, "time": 29859604}}
+{"topic": "ethernet/config", "payload": {"enable_ethernet": true, "ip": "0.0.0.0", "gateway": "0.0.0.0", "subnet": "0.0.0.0", "dns": "0.0.0.0", "dns2": "0.0.0.0"}}
+{"topic": "ethernet/state", "payload": {"connection_state": 3, "connection_start": 751142907, "connection_end": 751136905, "mac": "00:00:00:00:00:00", "ip": "192.0.2.1", "subnet": "255.255.255.0", "full_duplex": true, "link_speed": 100, "disable_countdown": 0}}
+{"topic": "wifi/state", "payload": {"connection_state": 0, "connection_start": 0, "connection_end": 0, "ap_state": 2, "ap_bssid": "00:00:00:00:00:00", "ap_sta_count": 0, "sta_mac": "00:00:00:00:00:00", "sta_ip": "0.0.0.0", "sta_subnet": "0.0.0.0", "sta_rssi": -127, "sta_bssid": "", "sta_disconnect_reason": 0, "ap_disable_countdown": 0, "sta_disable_countdown": 0}}
+{"topic": "wifi/sta_config", "payload": {"enable_sta": false, "ssid": "", "bssid": [0, 0, 0, 0, 0, 0], "bssid_lock": false, "enable_11b": false, "passphrase": "", "ip": "0.0.0.0", "gateway": "0.0.0.0", "subnet": "0.0.0.0", "dns": "0.0.0.0", "dns2": "0.0.0.0", "wpa_eap_config": [0, null]}}
+{"topic": "wifi/ap_config", "payload": {"enable_ap": true, "ap_fallback_only": true, "ssid": "**REDACTED**", "hide_ssid": false, "passphrase": null, "channel": 0, "ip": "192.0.2.1", "gateway": "192.0.2.1", "subnet": "255.255.255.0"}}
+{"topic": "network/state", "payload": {"connected": true}}
+{"topic": "mqtt/config", "payload": {"enable_mqtt": false, "broker_host": "", "broker_port": 1883, "broker_username": "", "broker_password": "", "global_topic_prefix": "**REDACTED**", "client_name": "warp3-2jEx", "interval": 1, "protocol": 0, "cert_id": -1, "client_cert_id": -1, "client_key_id": -1, "path": "", "read_only": false}}
+{"topic": "mqtt/state", "payload": {"connection_state": 0, "connection_start": 0, "connection_end": 0, "last_error": 0}}
+{"topic": "mqtt/auto_discovery_config", "payload": {"auto_discovery_mode": 0, "auto_discovery_prefix": "homeassistant"}}
+{"topic": "system/i18n_config", "payload": {"language": 0, "detect_browser_language": true}}
+{"topic": "system/theme_config", "payload": {"color_scheme": 0}}
+{"topic": "system/last_reset", "payload": {"reason": 1, "show_warning": false}}
+{"topic": "firmware_update/config", "payload": {"update_url": "https://www.warp-charger.com/firmwares/", "cert_id": -1}}
+{"topic": "firmware_update/state", "payload": {"publisher": "Tinkerforge GmbH", "check_timestamp": 1791397834, "check_state": 0, "update_version": "", "running_partition": "app1", "app0_state": 2, "app0_version": "2.9.1+6a3d2525", "app1_state": 2, "app1_version": "2.9.2+6a4f9137", "rolled_back_version": ""}}
+{"topic": "firmware_update/install_state", "payload": {"origin": 0, "state": 0, "progress": 0}}
+{"topic": "automation/config", "payload": {"tasks": []}}
+{"topic": "automation/state", "payload": {"registered_triggers": [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 16, 17, 18, 20], "registered_actions": [1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 14, 17], "enabled_triggers": [1, 2, 4, 6, 7, 9, 18, 20, 5, 10], "enabled_actions": [1, 3, 4, 5, 8, 14, 7, 11], "last_run": []}}
+{"topic": "charge_manager/config", "payload": {"enable_charge_manager": true, "enable_central_management": true, "enable_watchdog": false, "default_available_current": 32000, "maximum_available_current": 64000, "minimum_current_auto": true, "minimum_current": 6000, "minimum_current_1p": 6000, "minimum_current_vehicle_type": 0, "verbose": false, "requested_current_threshold": 60, "requested_current_margin": 3000, "chargers": [{"host": "192.0.2.10", "name": "Garage", "rot": 0}, {"host": "192.0.2.11", "name": "Driveway", "rot": 0}]}}
+{"topic": "charge_manager/low_level_config", "payload": {"global_hysteresis": 210, "wakeup_time": 210, "plug_in_time": 210, "enable_current_factor_pct": 150, "allocation_interval": 10, "rotation_interval": 900}}
+{"topic": "charge_manager/state", "payload": {"state": 1, "l_raw": [0, 0, 0, 0], "l_min": [0, 0, 0, 0], "l_spread": [0, 0, 0, 0], "l_max_pv": 0, "alloc": [0, 0, 0, 0], "auth_changed": false, "chargers": [{"s": 1, "e": 0, "ac": 0, "ap": 0, "sc": 32000, "sp": 3, "lu": 1230000, "n": "Garage", "uid": 257000, "u": 0}, {"s": 1, "e": 0, "ac": 0, "ap": 0, "sc": 32000, "sp": 3, "lu": 1230000, "n": "Driveway", "uid": 257001, "u": 0}]}}
+{"topic": "charge_manager/low_level_state", "payload": {"last_hyst_reset": 0, "wnd_min": [0, 0, 0, 0], "wnd_max": [0, 0, 0, 0], "chargers": [{"b": 0, "rc": 0, "ae": 0, "ls": 0, "lp": 0, "lw": 0, "ip": 0}, {"b": 0, "rc": 0, "ae": 0, "ls": 0, "lp": 0, "lw": 0, "ip": 0}]}}
+{"topic": "charge_manager/available_current", "payload": {"current": 32000}}
+{"topic": "charge_manager/charge_modes", "payload": [0, 0]}
+{"topic": "charge_manager/supported_charge_modes", "payload": [0, 1, 2, 3]}
+{"topic": "power_manager/charge_mode", "payload": {"mode": 2}}
+{"topic": "meters_legacy_api/state", "payload": {"writable": false}}
+{"topic": "meters_legacy_api/config", "payload": {"linked_meter_slot": 0}}
+{"topic": "batteries/config", "payload": {"enabled": false}}
+{"topic": "batteries/0/config", "payload": [0, null]}
+{"topic": "batteries/0/state", "payload": null}
+{"topic": "batteries/0/errors", "payload": null}
+{"topic": "batteries_modbus_tcp/test_state", "payload": {"slot": 0, "mode": -1}}
+{"topic": "battery_control/config", "payload": {"cheap_tariff_quarters": 0, "expensive_tariff_quarters": 0}}
+{"topic": "battery_control/rules_charge", "payload": []}
+{"topic": "battery_control/rules_discharge", "payload": []}
+{"topic": "battery_control/state", "payload": {"mode": -1, "active_charge_rule": 255, "active_discharge_rule": 255}}
+{"topic": "require_meter/config", "payload": {"config": 2}}
+{"topic": "charge_tracker/config", "payload": {"electricity_price": 0, "remote_upload_configs": []}}
+{"topic": "charge_tracker/pdf_letterhead_config", "payload": {"letterhead": ""}}
+{"topic": "charge_tracker/last_charges", "payload": []}
+{"topic": "charge_tracker/current_charge", "payload": {"user_id": -1, "meter_start": 0, "evse_uptime_start": 0, "timestamp_minutes": 0, "authorization_type": 0, "authorization_info": null, "charger_name": ""}}
+{"topic": "charge_tracker/state", "payload": {"tracked_charges": 0, "first_charge_timestamp": 0, "generator_state": 0}}
+{"topic": "power_manager/state", "payload": {"config_error_flags": 0, "external_control": 1}}
+{"topic": "power_manager/config", "payload": {"enabled": true, "phase_switching_mode": 0, "excess_charging_enable": true, "default_mode": 4, "meter_slot_grid_power": 0, "meter_slot_battery_power": 2, "battery_mode": 0, "battery_target_soc": 0, "battery_inverted": false, "battery_deadzone": 100, "target_power_from_grid": 0, "guaranteed_power": 1380, "cloud_filter_mode": 2}}
+{"topic": "power_manager/dynamic_load_config", "payload": {"enabled": false, "meter_slot_grid_currents": 0, "current_limit": 0, "largest_consumer_current": 32000, "safety_margin_pct": 0}}
+{"topic": "power_manager/low_level_state", "payload": {"power_at_meter": -1250.0, "power_at_battery": 450.0, "battery_soc": 62.5, "power_available": 1250, "i_meter": [0, 0, 0], "i_pp_max": [0, 0, 0], "i_pp_mavg": [0, 0, 0], "i_pp": [0, 0, 0], "max_current_limited": 0, "is_3phase": false, "charging_blocked": 0}}
+{"topic": "power_manager/external_control", "payload": {"phases_wanted": 0}}
+{"topic": "users/config", "payload": {"users": [{"id": 0, "roles": 4294967295, "current": 32000, "display_name": "Anonymous", "username": "**REDACTED**", "digest_hash": ""}, {"id": 1, "roles": 65535, "current": 32000, "display_name": "Benutzer 1", "username": "**REDACTED**", "digest_hash": ""}, {"id": 2, "roles": 65535, "current": 32000, "display_name": "Benutzer 2", "username": "**REDACTED**", "digest_hash": ""}, {"id": 3, "roles": 65535, "current": 32000, "display_name": "Benutzer 3", "username": "**REDACTED**", "digest_hash": ""}], "next_user_id": 4, "http_auth_enabled": false}}
+{"topic": "nfc/seen_tags", "payload": [{"tag_type": 0, "tag_id": "", "last_seen": 0}, {"tag_type": 0, "tag_id": "", "last_seen": 0}, {"tag_type": 0, "tag_id": "", "last_seen": 0}, {"tag_type": 0, "tag_id": "", "last_seen": 0}, {"tag_type": 0, "tag_id": "", "last_seen": 0}, {"tag_type": 0, "tag_id": "", "last_seen": 0}, {"tag_type": 0, "tag_id": "", "last_seen": 0}, {"tag_type": 0, "tag_id": "", "last_seen": 0}, {"tag_type": 0, "tag_id": "", "last_seen": 0}]}
+{"topic": "nfc/config", "payload": {"authorized_tags": [{"user_id": 1, "tag_type": 2, "tag_id": "**REDACTED**"}, {"user_id": 2, "tag_type": 2, "tag_id": "**REDACTED**"}, {"user_id": 3, "tag_type": 2, "tag_id": "**REDACTED**"}], "deadtime_post_start": 30}}
+{"topic": "charge_authorization/last_seen", "payload": [{"seen_at": 0, "auth_info": [0, null]}, {"seen_at": 0, "auth_info": [0, null]}, {"seen_at": 0, "auth_info": [0, null]}]}
+{"topic": "modbus_tcp/config", "payload": {"enable": false, "port": 502, "table": 0, "send_illegal_data_address": true, "ignore_writes": false}}
+{"topic": "modbus_tcp/error_counters", "payload": {"illegal_data_address": 0, "illegal_function": 0, "ignored_write": 0}}
+{"topic": "wireguard/config", "payload": {"enable": false, "make_default_interface": true, "internal_ip": "0.0.0.0", "internal_subnet": "0.0.0.0", "internal_gateway": "0.0.0.0", "remote_host": "", "remote_port": 51820, "local_port": 51820, "private_key": "", "remote_public_key": "", "preshared_key": "", "allowed_ip": "0.0.0.0", "allowed_subnet": "0.0.0.0", "mtu": 1420}}
+{"topic": "wireguard/state", "payload": {"connection_start": 0, "connection_end": 0, "public_key": "", "state": 0}}
+{"topic": "eebus/config", "payload": {"enable": false, "peers": []}}
+{"topic": "eebus/state", "payload": {"ski": "", "discovery_state": 0, "peers": []}}
+{"topic": "eebus/usecases", "payload": {"commands_received": 0, "commands_sent": 0, "lpc": {"usecase_state": 1, "limit_active": false, "current_limit": 0, "failsafe_limit_power_w": 0, "failsafe_limit_duration_s": 0, "constraints_power_maximum": 0, "outstanding_duration_s": 0}, "evcc": {"ev_connected": false, "communication_standard": "", "asymmetric_charging_supported": false, "mac_address": "", "minimum_power": 0, "maximum_power": 0, "standby_power": 0, "standby_mode": false}, "evsecc": {"evse_failure": false, "evse_failure_description": ""}, "evcem": {"active": false, "amps_phase_1": 0, "amps_phase_2": 0, "amps_phase_3": 0, "power_phase_1": 0, "power_phase_2": 0, "power_phase_3": 0, "charged_wh": 0, "charged_valuesource_measured": false}, "mpc": {"active": false, "total_power_w": -2147483648, "power_phase_1_w": -2147483648, "power_phase_2_w": -2147483648, "power_phase_3_w": -2147483648, "energy_consumed_wh": -2147483648, "energy_produced_wh": -2147483648, "current_phase_1_ma": -2147483648, "current_phase_2_ma": -2147483648, "current_phase_3_ma": -2147483648, "voltage_phase_1_v": -2147483648, "voltage_phase_2_v": -2147483648, "voltage_phase_3_v": -2147483648, "voltage_phase_1_2_v": -2147483648, "voltage_phase_2_3_v": -2147483648, "voltage_phase_3_1_v": -2147483648, "frequency_mhz": -2147483648}}}
+{"topic": "coredump/state", "payload": {"coredump_available": false}}
+{"topic": "certs/state", "payload": {"certs": []}}
+{"topic": "remote_access/config", "payload": {"uuid": "", "enable": false, "password": "", "relay_host": "**REDACTED**", "relay_port": 443, "cert_id": -1, "mtu": 1240, "users": []}}
+{"topic": "remote_access/state", "payload": [{"state": 1, "user": 255, "connection": 255, "last_state_change": 0}, {"state": 1, "user": 255, "connection": 255, "last_state_change": 0}, {"state": 1, "user": 255, "connection": 255, "last_state_change": 0}, {"state": 1, "user": 255, "connection": 255, "last_state_change": 0}, {"state": 1, "user": 255, "connection": 255, "last_state_change": 0}, {"state": 1, "user": 255, "connection": 255, "last_state_change": 0}]}
+{"topic": "remote_access/registration_state", "payload": {"state": 0, "message": ""}}
+{"topic": "remote_access/ping_state", "payload": {"packets_sent": 0, "packets_received": 0, "time_elapsed_ms": 0}}
+{"topic": "day_ahead_prices/config", "payload": {"enable": true, "source": 0, "api_url": "**REDACTED**", "region": 0, "resolution": 1, "cert_id": -1, "vat": 0, "grid_costs_and_taxes": 0, "supplier_markup": 0, "supplier_base_fee": 0, "enable_calendar": false}}
+{"topic": "day_ahead_prices/calendar", "payload": {"prices": []}}
+{"topic": "day_ahead_prices/state", "payload": {"last_sync": 29859000, "last_check": 29859000, "next_check": 29860000, "current_price": 25123}}
+{"topic": "day_ahead_prices/prices", "payload": {"first_date": 29858880, "resolution": 1, "prices": [25123, 24100, 22000, 21500, 23000, 26000]}}
+{"topic": "solar_forecast/config", "payload": {"enable": true, "source": 0, "api_url": "**REDACTED**", "cert_id": -1}}
+{"topic": "solar_forecast/state", "payload": {"wh_today": 23391, "wh_today_remaining": 12000, "wh_tomorrow": 23322, "rate_limit": 12, "rate_remaining": 11, "next_api_call": 29859522}}
+{"topic": "solar_forecast/planes/0/config", "payload": {"enable": true, "name": "South roof", "lat": 0, "long": 0, "dec": 20, "az": 16, "wp": 17600}}
+{"topic": "solar_forecast/planes/0/state", "payload": {"last_sync": 29859402, "last_check": 29859402, "next_check": 29859522, "place": "Musterstrasse 1, 12345 Musterstadt, Germany"}}
+{"topic": "solar_forecast/planes/0/forecast", "payload": {"first_date": 29858280, "resolution": 1, "forecast": [0, 0, 0, 0, 0, 0, 0, 0, 225, 1172, 1991, 2654, 3053, 3192, 3139, 2880, 2380, 1676, 1029, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 208, 1143, 1944, 2569, 2986, 3183, 3142, 2871, 2375, 1698, 1203, 0, 0, 0, 0, 0]}}
+{"topic": "solar_forecast/planes/1/config", "payload": {"enable": false, "name": "", "lat": 0, "long": 0, "dec": 0, "az": 0, "wp": 0}}
+{"topic": "solar_forecast/planes/1/state", "payload": {"last_sync": 0, "last_check": 0, "next_check": 0, "place": "Unknown"}}
+{"topic": "solar_forecast/planes/1/forecast", "payload": {"first_date": 0, "resolution": 1, "forecast": []}}
+{"topic": "solar_forecast/planes/2/config", "payload": {"enable": false, "name": "", "lat": 0, "long": 0, "dec": 0, "az": 0, "wp": 0}}
+{"topic": "solar_forecast/planes/2/state", "payload": {"last_sync": 0, "last_check": 0, "next_check": 0, "place": "Unknown"}}
+{"topic": "solar_forecast/planes/2/forecast", "payload": {"first_date": 0, "resolution": 1, "forecast": []}}
+{"topic": "solar_forecast/planes/3/config", "payload": {"enable": false, "name": "", "lat": 0, "long": 0, "dec": 0, "az": 0, "wp": 0}}
+{"topic": "solar_forecast/planes/3/state", "payload": {"last_sync": 0, "last_check": 0, "next_check": 0, "place": "Unknown"}}
+{"topic": "solar_forecast/planes/3/forecast", "payload": {"first_date": 0, "resolution": 1, "forecast": []}}
+{"topic": "solar_forecast/planes/4/config", "payload": {"enable": false, "name": "", "lat": 0, "long": 0, "dec": 0, "az": 0, "wp": 0}}
+{"topic": "solar_forecast/planes/4/state", "payload": {"last_sync": 0, "last_check": 0, "next_check": 0, "place": "Unknown"}}
+{"topic": "solar_forecast/planes/4/forecast", "payload": {"first_date": 0, "resolution": 1, "forecast": []}}
+{"topic": "solar_forecast/planes/5/config", "payload": {"enable": false, "name": "", "lat": 0, "long": 0, "dec": 0, "az": 0, "wp": 0}}
+{"topic": "solar_forecast/planes/5/state", "payload": {"last_sync": 0, "last_check": 0, "next_check": 0, "place": "Unknown"}}
+{"topic": "solar_forecast/planes/5/forecast", "payload": {"first_date": 0, "resolution": 1, "forecast": []}}
+{"topic": "eco/config", "payload": {"enable": false, "park_time": false, "park_time_duration": 8, "charge_below": false, "charge_below_threshold": 0, "block_above": false, "block_above_threshold": 20, "yield_forecast": false, "yield_forecast_threshold": 0}}
+{"topic": "eco/state", "payload": {"last_save": 0, "chargers": []}}
+{"topic": "eco/charge_plan", "payload": {"enable": false, "departure": 2, "time": 480, "amount": 4}}
+{"topic": "p14a_enwg/config", "payload": {"enable": true, "source": [0, {"limit_on_close": true, "limit_w": 4200, "input_index": 0}], "limit_charger": false, "limit_charge_manager": false, "limit_heating": false, "heating_max_power": 0}}
+{"topic": "p14a_enwg/state", "payload": {"active": false, "limit_w": 0}}
+{"topic": "p14a_enwg/control", "payload": {"active": false, "limit_w": 0}}
+{"topic": "energy_manager/state", "payload": {"error_flags": 0, "config_error_flags": 0, "em_version": 2, "inputs": [false, false, false, false], "sg_ready_outputs": [false, false], "relays": [false, false]}}
+{"topic": "energy_manager/low_level_state", "payload": {"consecutive_bricklet_errors": 0, "input_voltage": 24012, "uptime": 1234567}}
+{"topic": "energy_manager/config", "payload": {}}
+{"topic": "temperatures/config", "payload": {"enable": false, "source": 0, "api_url": "**REDACTED**", "lat": 0, "long": 0, "cert_id": -1}}
+{"topic": "temperatures/state", "payload": {"last_sync": 0, "last_check": 0, "next_check": 0, "current": 32767, "today_min": 32767, "today_max": 32767, "today_avg": 32767, "tomorrow_min": 32767, "tomorrow_max": 32767, "tomorrow_avg": 32767}}
+{"topic": "meters/0/config", "payload": [3, {"display_name": "WARP Energy Manager", "location": 4, "excluded": false}]}
+{"topic": "meters/0/state", "payload": {"type": 2}}
+{"topic": "meters/0/errors", "payload": {"local_timeout": 0, "global_timeout": 0, "illegal_function": 0, "illegal_data_access": 0, "illegal_data_value": 0, "slave_device_failure": 0}}
+{"topic": "meters/0/value_ids", "payload": [1, 2, 3, 14, 18, 22, 39, 48, 57, 74, 209, 211, 364]}
+{"topic": "meters/0/values", "payload": [230.7, 232.1, 230.3, 1.8, 1.9, 1.7, 415.0, 440.0, 395.0, 1250.0, 18203.456, 9120.789, 49.98]}
+{"topic": "meters/1/config", "payload": [5, {"excluded": false, "host": "192.0.2.20", "port": 502, "device_address": 1, "manufacturer_name": "Example", "model_name": "Inverter", "serial_number": "0000000", "model_id": 103, "model_instance": 0, "dc_port_type": 0, "display_name": "Example Inverter", "location": 7}]}
+{"topic": "meters/1/state", "payload": null}
+{"topic": "meters/1/errors", "payload": {"timeout": 0, "inconsistency": 0}}
+{"topic": "meters/1/value_ids", "payload": [74, 211, 453, 472]}
+{"topic": "meters/1/values", "payload": [-3200.0, 5231.8, -3200.0, 5231.8]}
+{"topic": "meters/2/config", "payload": [5, {"excluded": false, "host": "192.0.2.21", "port": 502, "device_address": 1, "manufacturer_name": "Example", "model_name": "Inverter", "serial_number": "0000000", "model_id": 124, "model_instance": 0, "dc_port_type": 0, "display_name": "Example Battery", "location": 5}]}
+{"topic": "meters/2/state", "payload": null}
+{"topic": "meters/2/errors", "payload": {"timeout": 0, "inconsistency": 0}}
+{"topic": "meters/2/value_ids", "payload": [74, 209, 211, 387, 475]}
+{"topic": "meters/2/values", "payload": [450.0, 1200.5, 1100.2, 62.5, 10.0]}
+{"topic": "meters/3/config", "payload": [0, null]}
+{"topic": "meters/3/state", "payload": null}
+{"topic": "meters/3/errors", "payload": null}
+{"topic": "meters/3/value_ids", "payload": []}
+{"topic": "meters/3/values", "payload": []}
+{"topic": "meters/4/config", "payload": [0, null]}
+{"topic": "meters/4/state", "payload": null}
+{"topic": "meters/4/errors", "payload": null}
+{"topic": "meters/4/value_ids", "payload": []}
+{"topic": "meters/4/values", "payload": []}
+{"topic": "meters/5/config", "payload": [0, null]}
+{"topic": "meters/5/state", "payload": null}
+{"topic": "meters/5/errors", "payload": null}
+{"topic": "meters/5/value_ids", "payload": []}
+{"topic": "meters/5/values", "payload": []}
+{"topic": "meters/6/config", "payload": [0, null]}
+{"topic": "meters/6/state", "payload": null}
+{"topic": "meters/6/errors", "payload": null}
+{"topic": "meters/6/value_ids", "payload": []}
+{"topic": "meters/6/values", "payload": []}

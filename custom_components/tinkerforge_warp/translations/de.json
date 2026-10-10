@@ -1,0 +1,427 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "user": {
+        "title": "Mit WARP-Lader verbinden",
+        "description": "Geben Sie die Adresse des Laders ein. Benutzername und Passwort k\u00f6nnen leer gelassen werden, falls die Web-Schnittstelle nicht passwortgesch\u00fctzt ist.",
+        "data": {
+          "host": "Host",
+          "username": "Benutzername",
+          "password": "Passwort"
+        },
+        "data_description": {
+          "host": "Hostname oder IP-Adresse, optional mit Port (`warp3-abc.local:8080`).",
+          "username": "Nur erforderlich, wenn die Web-Schnittstelle des Laders ein Login erfordert.",
+          "password": "Passwort des Web-Schnittstellen-Benutzers."
+        },
+        "sections": {
+          "advanced": {
+            "name": "Erweiterte Einstellungen",
+            "data": {
+              "ssl": "HTTPS verwenden",
+              "verify_ssl": "SSL-Zertifikat \u00fcberpr\u00fcfen"
+            },
+            "data_description": {
+              "ssl": "Verbindung mit HTTPS. Empfohlen, wenn ein Passwort gesetzt ist, da sich die Anmeldung sonst im Netzwerk wiederholen kann.",
+              "verify_ssl": "Zertifikat \u00fcberpr\u00fcfen. Deaktivieren Sie diese Option f\u00fcr das selbstsignierte Zertifikat des Laders."
+            }
+          }
+        }
+      },
+      "zeroconf_confirm": {
+        "title": "{name} einrichten?",
+        "description": "Ein WARP-Lader wurde in Ihrem Netzwerk gefunden. Falls der Lader passwortgesch\u00fctzt ist, geben Sie die Anmeldedaten der Web-Schnittstelle ein.",
+        "data": {
+          "username": "Benutzername",
+          "password": "Passwort"
+        },
+        "data_description": {
+          "username": "Benutzername der Web-Schnittstelle.",
+          "password": "Passwort des Web-Schnittstellen-Benutzers."
+        }
+      },
+      "reauth_confirm": {
+        "title": "WARP-Lader neu authentifizieren",
+        "description": "Die Anmeldedaten f\u00fcr {name} fehlen oder sind nicht mehr g\u00fcltig. Geben Sie die aktuellen Anmeldedaten der Web-Schnittstelle ein.",
+        "data": {
+          "username": "Benutzername",
+          "password": "Passwort"
+        },
+        "data_description": {
+          "username": "Benutzername der Web-Schnittstelle.",
+          "password": "Passwort des Web-Schnittstellen-Benutzers."
+        }
+      },
+      "reconfigure": {
+        "title": "WARP-Lader neu konfigurieren",
+        "description": "\u00c4ndern Sie die Adresse oder Anmeldedaten dieses Laders.",
+        "data": {
+          "host": "Host",
+          "username": "Benutzername",
+          "password": "Passwort"
+        },
+        "data_description": {
+          "host": "Hostname oder IP-Adresse, optional mit Port (`warp3-abc.local:8080`).",
+          "username": "Nur erforderlich, wenn die Web-Schnittstelle des Laders ein Login erfordert.",
+          "password": "Passwort des Web-Schnittstellen-Benutzers."
+        },
+        "sections": {
+          "advanced": {
+            "name": "Erweiterte Einstellungen",
+            "data": {
+              "ssl": "HTTPS verwenden",
+              "verify_ssl": "SSL-Zertifikat \u00fcberpr\u00fcfen"
+            },
+            "data_description": {
+              "ssl": "Verbindung mit HTTPS. Empfohlen, wenn ein Passwort gesetzt ist, da sich die Anmeldung sonst im Netzwerk wiederholen kann.",
+              "verify_ssl": "Zertifikat \u00fcberpr\u00fcfen. Deaktivieren Sie diese Option f\u00fcr das selbstsignierte Zertifikat des Laders."
+            }
+          }
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung zum Lader fehlgeschlagen",
+      "invalid_auth": "Ung\u00fcltiger Benutzername oder Passwort",
+      "unknown": "Unerwarteter Fehler"
+    },
+    "abort": {
+      "already_configured": "Dieser Lader ist bereits konfiguriert",
+      "cannot_connect": "Verbindung zum Lader fehlgeschlagen",
+      "invalid_discovery": "Das erkannte Ger\u00e4t hat keine g\u00fcltige eindeutige ID gemeldet.",
+      "reauth_successful": "Neuauthentifizierung war erfolgreich",
+      "reconfigure_successful": "Neukonfiguration war erfolgreich",
+      "wrong_device": "Dies ist ein anderer Lader als der konfigurierte."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "charger_state": {
+        "name": "Ladestatus",
+        "state": {
+          "not_connected": "Nicht verbunden",
+          "waiting_for_release": "Wartet auf Freigabe",
+          "ready": "Bereit zum Laden",
+          "charging": "L\u00e4dt",
+          "error": "Fehler"
+        }
+      },
+      "allowed_charging_current": {
+        "name": "Erlaubter Ladestrom"
+      },
+      "error_state": {
+        "name": "Fehlerstatus",
+        "state": {
+          "ok": "OK",
+          "switch_error": "Schalter-Fehler",
+          "dc_fault": "DC-Fehler",
+          "contactor_error": "Sch\u00fctz-Fehler",
+          "communication_error": "Kommunikationsfehler"
+        }
+      },
+      "iec61851_state": {
+        "name": "IEC 61851 Status",
+        "state": {
+          "a": "A: nicht verbunden",
+          "b": "B: verbunden",
+          "c": "C: l\u00e4dt",
+          "d": "D: l\u00e4dt mit L\u00fcftung",
+          "e": "E/F: Fehler"
+        }
+      },
+      "dc_fault_state": {
+        "name": "DC-Fehlerstatus",
+        "state": {
+          "ok": "OK",
+          "dc_6ma": "DC 6mA",
+          "system": "System",
+          "unknown": "Unbekannt",
+          "calibration": "Kalibrierung",
+          "ac": "AC",
+          "ac_dc": "AC/DC"
+        }
+      },
+      "phases_active": {
+        "name": "Aktive Phasen"
+      },
+      "temperature": {
+        "name": "Temperatur"
+      },
+      "session_energy": {
+        "name": "Ladesitzung Energie"
+      },
+      "session_start": {
+        "name": "Ladesitzung Start"
+      },
+      "session_user": {
+        "name": "Ladesitzung Benutzer"
+      },
+      "last_session_energy": {
+        "name": "Letzte Ladesitzung Energie"
+      },
+      "vehicle_capacity": {
+        "name": "Fahrzeug-Kapazit\u00e4t"
+      },
+      "vehicle_name": {
+        "name": "Fahrzeugname"
+      },
+      "p14a_limit": {
+        "name": "P14A-Limit"
+      },
+      "electricity_price": {
+        "name": "Strompreis"
+      },
+      "solar_forecast_today": {
+        "name": "Solarprognose heute"
+      },
+      "solar_forecast_today_remaining": {
+        "name": "Solarprognose heute verbleibend"
+      },
+      "solar_forecast_tomorrow": {
+        "name": "Solarprognose morgen"
+      },
+      "esp_temperature": {
+        "name": "ESP-Temperatur"
+      },
+      "wifi_rssi": {
+        "name": "WiFi RSSI"
+      },
+      "last_restart": {
+        "name": "Letzter Neustart"
+      },
+      "voltage_l1_n": {
+        "name": "Spannung L1-N"
+      },
+      "voltage_l2_n": {
+        "name": "Spannung L2-N"
+      },
+      "voltage_l3_n": {
+        "name": "Spannung L3-N"
+      },
+      "voltage_dc": {
+        "name": "DC-Spannung"
+      },
+      "current_l1_im_ex_sum": {
+        "name": "Strom L1"
+      },
+      "current_l1_im_ex_diff": {
+        "name": "Strom L1"
+      },
+      "current_l2_im_ex_sum": {
+        "name": "Strom L2"
+      },
+      "current_l2_im_ex_diff": {
+        "name": "Strom L2"
+      },
+      "current_l3_im_ex_sum": {
+        "name": "Strom L3"
+      },
+      "current_l3_im_ex_diff": {
+        "name": "Strom L3"
+      },
+      "current_dc": {
+        "name": "DC-Strom"
+      },
+      "power_active_l1_im_ex_diff": {
+        "name": "Leistung L1"
+      },
+      "power_active_l2_im_ex_diff": {
+        "name": "Leistung L2"
+      },
+      "power_active_l3_im_ex_diff": {
+        "name": "Leistung L3"
+      },
+      "power_active_l_sum_im_ex_diff": {
+        "name": "Leistung"
+      },
+      "power_dc": {
+        "name": "DC-Leistung"
+      },
+      "energy_active_l_sum_import": {
+        "name": "Energie Bezug"
+      },
+      "energy_active_l_sum_export": {
+        "name": "Energie Einspeisung"
+      },
+      "energy_active_l_sum_im_ex_sum": {
+        "name": "Energie"
+      },
+      "frequency_l_avg": {
+        "name": "Frequenz"
+      },
+      "state_of_charge": {
+        "name": "Ladezustand"
+      },
+      "energy_dc_import": {
+        "name": "DC-Energie Bezug"
+      },
+      "energy_dc_export": {
+        "name": "DC-Energie Einspeisung"
+      },
+      "voltage_pv_avg": {
+        "name": "PV-Spannung"
+      },
+      "current_pv_sum_export": {
+        "name": "PV-Strom"
+      },
+      "power_pv_sum_im_ex_diff": {
+        "name": "PV-Leistung"
+      },
+      "energy_pv_sum_export": {
+        "name": "PV-Energie"
+      },
+      "capacity": {
+        "name": "Kapazit\u00e4t"
+      }
+    },
+    "binary_sensor": {
+      "plugged": {
+        "name": "Angesteckt"
+      },
+      "charging": {
+        "name": "L\u00e4dt"
+      },
+      "problem": {
+        "name": "Problem"
+      },
+      "button_pressed": {
+        "name": "Taste gedr\u00fcckt"
+      },
+      "p14a_limited": {
+        "name": "P14A begrenzt"
+      }
+    },
+    "number": {
+      "charging_current_limit": {
+        "name": "Ladestromgrenze"
+      },
+      "charge_energy_limit": {
+        "name": "Lade-Energie-Limit"
+      },
+      "charge_soc_limit": {
+        "name": "Lade-SoC-Limit"
+      },
+      "vehicle_soc": {
+        "name": "Fahrzeug-SoC"
+      }
+    },
+    "switch": {
+      "auto_start_charging": {
+        "name": "Automatisch laden"
+      },
+      "external_clear_on_disconnect": {
+        "name": "Extern l\u00f6schen beim Trennen"
+      },
+      "boost_mode": {
+        "name": "Boost-Modus"
+      },
+      "phase_auto_switch": {
+        "name": "Phasen Auto-Schaltung"
+      }
+    },
+    "select": {
+      "charge_mode": {
+        "name": "Lademodus",
+        "state": {
+          "fast": "Schnell",
+          "off": "Aus",
+          "pv": "PV",
+          "min_pv": "Min + PV",
+          "default": "Standard",
+          "min": "Min",
+          "eco": "Eco",
+          "eco_pv": "Eco + PV",
+          "eco_min": "Eco + Min",
+          "eco_min_pv": "Eco + Min + PV"
+        }
+      },
+      "phases": {
+        "name": "Phasen",
+        "state": {
+          "single_phase": "1-phasig",
+          "three_phase": "3-phasig"
+        }
+      },
+      "charge_duration_limit": {
+        "name": "Maximale Ladevergeldauer",
+        "state": {
+          "off": "Aus",
+          "15m": "15 Minuten",
+          "30m": "30 Minuten",
+          "45m": "45 Minuten",
+          "1h": "1 Stunde",
+          "2h": "2 Stunden",
+          "3h": "3 Stunden",
+          "4h": "4 Stunden",
+          "6h": "6 Stunden",
+          "8h": "8 Stunden",
+          "12h": "12 Stunden"
+        }
+      }
+    },
+    "button": {
+      "start_charging": {
+        "name": "Laden starten"
+      },
+      "stop_charging": {
+        "name": "Laden stoppen"
+      },
+      "restart_charge_limits": {
+        "name": "Lade-Limits neu starten"
+      },
+      "reboot": {
+        "name": "Neustart"
+      }
+    },
+    "event": {
+      "nfc_tag": {
+        "name": "NFC-Tag",
+        "state_attributes": {
+          "event_type": {
+            "state": {
+              "scanned": "Gescannt"
+            }
+          },
+          "tag_id": {
+            "name": "Tag-ID"
+          },
+          "tag_type": {
+            "name": "Tag-Typ"
+          }
+        }
+      }
+    },
+    "update": {
+      "firmware": {
+        "name": "Firmware"
+      }
+    }
+  },
+  "exceptions": {
+    "command_failed": {
+      "message": "Der Lader hat den Befehl abgelehnt: {error}"
+    },
+    "cannot_connect": {
+      "message": "Kann sich nicht mit dem Lader verbinden: {error}"
+    },
+    "invalid_auth": {
+      "message": "Der Lader hat die Anmeldedaten abgelehnt."
+    },
+    "current_too_low": {
+      "message": "Ladestrom muss 0 (Pause) oder zwischen 6 und 32 Ampere sein."
+    },
+    "install_vehicle_connected": {
+      "message": "Firmware kann nicht installiert werden, w\u00e4hrend ein Fahrzeug verbunden ist."
+    },
+    "install_failed": {
+      "message": "Firmware-Installation fehlgeschlagen (Status: {state})."
+    }
+  },
+  "issues": {
+    "too_many_clients": {
+      "title": "{name} unterbricht die Verbindung wiederholt",
+      "description": "Der Lader erlaubt maximal 5 gleichzeitige WebSocket-Clients (Web-Schnittstellen-Tabs, evcc, andere Integrationen) und hat Home Assistant wiederholt disconnected, um Platz f\u00fcr einen anderen zu machen. Schlie\u00dfen Sie nicht verwendete Web-Schnittstellen-Tabs oder andere mit dem Lader verbundene Clients."
+    }
+  }
+}

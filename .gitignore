@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+dist/
+config/
+.claude/settings.local.json
+*.iml
+.idea/

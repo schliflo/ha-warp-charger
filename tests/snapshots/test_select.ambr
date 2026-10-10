@@ -1,0 +1,610 @@
+# serializer version: 1
+# name: test_snapshot[warp2][select.warp2_charger_pro_charge_duration_limit-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'off',
+        '15m',
+        '30m',
+        '45m',
+        '1h',
+        '2h',
+        '3h',
+        '4h',
+        '6h',
+        '8h',
+        '12h',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': None,
+    'entity_id': 'select.warp2_charger_pro_charge_duration_limit',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Charge duration limit',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Charge duration limit',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'charge_duration_limit',
+    'unique_id': '2jEx_charge_duration_limit',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[warp2][select.warp2_charger_pro_charge_duration_limit-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp2-charger-pro Charge duration limit',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'off',
+        '15m',
+        '30m',
+        '45m',
+        '1h',
+        '2h',
+        '3h',
+        '4h',
+        '6h',
+        '8h',
+        '12h',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.warp2_charger_pro_charge_duration_limit',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_snapshot[warp3][select.warp3_charger_pro_charge_duration_limit-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'off',
+        '15m',
+        '30m',
+        '45m',
+        '1h',
+        '2h',
+        '3h',
+        '4h',
+        '6h',
+        '8h',
+        '12h',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': None,
+    'entity_id': 'select.warp3_charger_pro_charge_duration_limit',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Charge duration limit',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Charge duration limit',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'charge_duration_limit',
+    'unique_id': '2jEx_charge_duration_limit',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[warp3][select.warp3_charger_pro_charge_duration_limit-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp3-charger-pro Charge duration limit',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'off',
+        '15m',
+        '30m',
+        '45m',
+        '1h',
+        '2h',
+        '3h',
+        '4h',
+        '6h',
+        '8h',
+        '12h',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.warp3_charger_pro_charge_duration_limit',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_snapshot[warp3][select.warp3_charger_pro_phases-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'single_phase',
+        'three_phase',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': None,
+    'entity_id': 'select.warp3_charger_pro_phases',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Phases',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Phases',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'phases',
+    'unique_id': '2jEx_phases',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[warp3][select.warp3_charger_pro_phases-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp3-charger-pro Phases',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'single_phase',
+        'three_phase',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.warp3_charger_pro_phases',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'single_phase',
+  })
+# ---
+# name: test_snapshot[warp4][select.warp4_charger_pro_charge_duration_limit-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'off',
+        '15m',
+        '30m',
+        '45m',
+        '1h',
+        '2h',
+        '3h',
+        '4h',
+        '6h',
+        '8h',
+        '12h',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': None,
+    'entity_id': 'select.warp4_charger_pro_charge_duration_limit',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Charge duration limit',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Charge duration limit',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'charge_duration_limit',
+    'unique_id': '2c7P_charge_duration_limit',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[warp4][select.warp4_charger_pro_charge_duration_limit-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp4-charger-pro Charge duration limit',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'off',
+        '15m',
+        '30m',
+        '45m',
+        '1h',
+        '2h',
+        '3h',
+        '4h',
+        '6h',
+        '8h',
+        '12h',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.warp4_charger_pro_charge_duration_limit',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_snapshot[warp4][select.warp4_charger_pro_phases-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'single_phase',
+        'three_phase',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': None,
+    'entity_id': 'select.warp4_charger_pro_phases',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Phases',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Phases',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'phases',
+    'unique_id': '2c7P_phases',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[warp4][select.warp4_charger_pro_phases-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp4-charger-pro Phases',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'single_phase',
+        'three_phase',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.warp4_charger_pro_phases',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'three_phase',
+  })
+# ---
+# name: test_snapshot[wem2][select.wem2_energy_manager_charge_mode-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'fast',
+        'off',
+        'pv',
+        'min_pv',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': None,
+    'entity_id': 'select.wem2_energy_manager_charge_mode',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Charge mode',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Charge mode',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'charge_mode',
+    'unique_id': '2gNm_charge_mode',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot[wem2][select.wem2_energy_manager_charge_mode-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'wem2-energy-manager Charge mode',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'fast',
+        'off',
+        'pv',
+        'min_pv',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.wem2_energy_manager_charge_mode',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'pv',
+  })
+# ---
+# name: test_snapshot_managed_charger[select.warp3_charger_pro_charge_duration_limit-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'off',
+        '15m',
+        '30m',
+        '45m',
+        '1h',
+        '2h',
+        '3h',
+        '4h',
+        '6h',
+        '8h',
+        '12h',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': None,
+    'entity_id': 'select.warp3_charger_pro_charge_duration_limit',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Charge duration limit',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Charge duration limit',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'charge_duration_limit',
+    'unique_id': '2jEx_charge_duration_limit',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot_managed_charger[select.warp3_charger_pro_charge_duration_limit-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp3-charger-pro Charge duration limit',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'off',
+        '15m',
+        '30m',
+        '45m',
+        '1h',
+        '2h',
+        '3h',
+        '4h',
+        '6h',
+        '8h',
+        '12h',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.warp3_charger_pro_charge_duration_limit',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_snapshot_managed_charger[select.warp3_charger_pro_charge_mode-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'fast',
+        'off',
+        'pv',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': None,
+    'entity_id': 'select.warp3_charger_pro_charge_mode',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Charge mode',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Charge mode',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'charge_mode',
+    'unique_id': '2jEx_charge_mode',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot_managed_charger[select.warp3_charger_pro_charge_mode-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp3-charger-pro Charge mode',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'fast',
+        'off',
+        'pv',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.warp3_charger_pro_charge_mode',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'fast',
+  })
+# ---
+# name: test_snapshot_managed_charger[select.warp3_charger_pro_phases-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'single_phase',
+        'three_phase',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': None,
+    'entity_id': 'select.warp3_charger_pro_phases',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Phases',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Phases',
+    'platform': 'tinkerforge_warp',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'phases',
+    'unique_id': '2jEx_phases',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_snapshot_managed_charger[select.warp3_charger_pro_phases-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'warp3-charger-pro Phases',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'single_phase',
+        'three_phase',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.warp3_charger_pro_phases',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'single_phase',
+  })
+# ---

@@ -1,0 +1,105 @@
+rules:
+  action-setup:
+    status: exempt
+    comment: "The integration registers no actions."
+  appropriate-polling:
+    status: exempt
+    comment: "Push only: one WebSocket feeds all entities, no polling."
+  brands:
+    status: todo
+    comment: "Brand assets are not submitted yet."
+  common-modules:
+    status: done
+    comment: "entity.py holds the shared runtime and base entity; there is no coordinator."
+  config-flow: done
+  config-flow-test-coverage:
+    status: done
+    comment: "tests/test_config_flow.py covers config_flow.py completely."
+  dependency-transparency:
+    status: todo
+    comment: "warp-charger is not published to PyPI with a tagged source and CI release yet."
+  docs-actions:
+    status: exempt
+    comment: "The integration registers no actions."
+  docs-conditions:
+    status: exempt
+    comment: "The integration provides no conditions."
+  docs-high-level-description: done
+  docs-installation-instructions: done
+  docs-removal-instructions: done
+  docs-triggers:
+    status: exempt
+    comment: "The integration provides no triggers."
+  entity-event-setup:
+    status: done
+    comment: "Entities subscribe in async_added_to_hass and unsubscribe via async_on_remove."
+  entity-unique-id: done
+  has-entity-name: done
+  runtime-data: done
+  test-before-configure: done
+  test-before-setup:
+    status: done
+    comment: "Setup waits for the first full state dump (ConfigEntryNotReady / ConfigEntryAuthFailed)."
+  unique-config-entry:
+    status: done
+    comment: "Unique ID is the device uid."
+  action-exceptions:
+    status: done
+    comment: "WarpRuntime.async_put raises translated HomeAssistantError."
+  config-entry-unloading: done
+  docs-configuration-parameters:
+    status: exempt
+    comment: "The integration has no options flow."
+  docs-installation-parameters: done
+  entity-unavailable:
+    status: done
+    comment: "Entities go unavailable 30 s after the connection drops."
+  integration-owner: done
+  log-when-unavailable:
+    status: done
+    comment: "warp_charger logs once when the connection is lost and once when it is back."
+  parallel-updates: done
+  reauthentication-flow: done
+  test-coverage: done
+  devices:
+    status: done
+    comment: "Main device plus one sub-device per extra meter."
+  diagnostics: done
+  discovery:
+    status: done
+    comment: "mDNS _http._tcp with brand/model matching."
+  discovery-update-info:
+    status: done
+    comment: "A rediscovered device updates the host of its entry."
+  docs-data-update: done
+  docs-examples: done
+  docs-known-limitations: done
+  docs-supported-devices: done
+  docs-supported-functions: done
+  docs-troubleshooting: done
+  docs-use-cases: done
+  dynamic-devices:
+    status: exempt
+    comment: "Structure changes on the device trigger a debounced reload instead of live entity changes."
+  entity-category: done
+  entity-device-class: done
+  entity-disabled-by-default: done
+  entity-translations: done
+  exception-translations: done
+  icon-translations: done
+  reconfiguration-flow: done
+  repair-issues:
+    status: done
+    comment: "Repair issue when the device repeatedly kicks the client (5 WebSocket client limit)."
+  stale-devices:
+    status: done
+    comment: "Meter sub-devices that no longer exist are removed at setup."
+  async-dependency:
+    status: done
+    comment: "warp-charger is asyncio based."
+  inject-websession:
+    status: done
+    comment: "The client takes the aiohttp session created by Home Assistant."
+  strict-typing:
+    status: todo
+    comment: "mypy strict is not configured yet."

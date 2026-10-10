@@ -1,0 +1,19 @@
+version: 2
+updates:
+  - package-ecosystem: uv
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      home-assistant:
+        patterns: ["pytest-homeassistant-custom-component", "homeassistant"]
+      dev:
+        dependency-type: development
+        exclude-patterns: ["pytest-homeassistant-custom-component", "homeassistant"]
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ["*"]

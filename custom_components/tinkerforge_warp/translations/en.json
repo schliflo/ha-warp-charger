@@ -1,0 +1,427 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "user": {
+        "title": "Connect to a WARP charger",
+        "description": "Enter the address of the charger. Leave username and password empty if the web interface is not password protected.",
+        "data": {
+          "host": "Host",
+          "username": "Username",
+          "password": "Password"
+        },
+        "data_description": {
+          "host": "Hostname or IP address, optionally with a port (`warp3-abc.local:8080`).",
+          "username": "Only needed if the charger's web interface requires a login.",
+          "password": "Password of the web interface user."
+        },
+        "sections": {
+          "advanced": {
+            "name": "Advanced settings",
+            "data": {
+              "ssl": "Use HTTPS",
+              "verify_ssl": "Verify SSL certificate"
+            },
+            "data_description": {
+              "ssl": "Connect using HTTPS. Recommended when a password is set, as the login can otherwise be replayed on the network.",
+              "verify_ssl": "Verify the certificate. Leave off for the charger's self-signed certificate."
+            }
+          }
+        }
+      },
+      "zeroconf_confirm": {
+        "title": "Set up {name}?",
+        "description": "A WARP charger was found on your network. If it is password protected, enter the web interface credentials.",
+        "data": {
+          "username": "Username",
+          "password": "Password"
+        },
+        "data_description": {
+          "username": "Username of the web interface.",
+          "password": "Password of the web interface user."
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reauthenticate WARP charger",
+        "description": "The credentials for {name} are missing or no longer valid. Enter the current web interface credentials.",
+        "data": {
+          "username": "Username",
+          "password": "Password"
+        },
+        "data_description": {
+          "username": "Username of the web interface.",
+          "password": "Password of the web interface user."
+        }
+      },
+      "reconfigure": {
+        "title": "Reconfigure WARP charger",
+        "description": "Change the address or credentials of this charger.",
+        "data": {
+          "host": "Host",
+          "username": "Username",
+          "password": "Password"
+        },
+        "data_description": {
+          "host": "Hostname or IP address, optionally with a port (`warp3-abc.local:8080`).",
+          "username": "Only needed if the charger's web interface requires a login.",
+          "password": "Password of the web interface user."
+        },
+        "sections": {
+          "advanced": {
+            "name": "Advanced settings",
+            "data": {
+              "ssl": "Use HTTPS",
+              "verify_ssl": "Verify SSL certificate"
+            },
+            "data_description": {
+              "ssl": "Connect using HTTPS. Recommended when a password is set, as the login can otherwise be replayed on the network.",
+              "verify_ssl": "Verify the certificate. Leave off for the charger's self-signed certificate."
+            }
+          }
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the charger",
+      "invalid_auth": "Invalid username or password",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This charger is already configured",
+      "cannot_connect": "Failed to connect to the charger",
+      "invalid_discovery": "The discovered device did not report a valid unique ID.",
+      "reauth_successful": "Reauthentication was successful",
+      "reconfigure_successful": "Reconfiguration was successful",
+      "wrong_device": "This is a different charger than the one configured."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "charger_state": {
+        "name": "Charger state",
+        "state": {
+          "not_connected": "Not connected",
+          "waiting_for_release": "Waiting for release",
+          "ready": "Ready to charge",
+          "charging": "Charging",
+          "error": "Error"
+        }
+      },
+      "allowed_charging_current": {
+        "name": "Allowed charging current"
+      },
+      "error_state": {
+        "name": "Error state",
+        "state": {
+          "ok": "OK",
+          "switch_error": "Switch error",
+          "dc_fault": "DC fault",
+          "contactor_error": "Contactor error",
+          "communication_error": "Communication error"
+        }
+      },
+      "iec61851_state": {
+        "name": "IEC 61851 state",
+        "state": {
+          "a": "A: not connected",
+          "b": "B: connected",
+          "c": "C: charging",
+          "d": "D: charging with ventilation",
+          "e": "E/F: error"
+        }
+      },
+      "dc_fault_state": {
+        "name": "DC fault state",
+        "state": {
+          "ok": "OK",
+          "dc_6ma": "DC 6mA",
+          "system": "System",
+          "unknown": "Unknown",
+          "calibration": "Calibration",
+          "ac": "AC",
+          "ac_dc": "AC/DC"
+        }
+      },
+      "phases_active": {
+        "name": "Phases active"
+      },
+      "temperature": {
+        "name": "Temperature"
+      },
+      "session_energy": {
+        "name": "Session energy"
+      },
+      "session_start": {
+        "name": "Session start"
+      },
+      "session_user": {
+        "name": "Session user"
+      },
+      "last_session_energy": {
+        "name": "Last session energy"
+      },
+      "vehicle_capacity": {
+        "name": "Vehicle capacity"
+      },
+      "vehicle_name": {
+        "name": "Vehicle name"
+      },
+      "p14a_limit": {
+        "name": "P14A limit"
+      },
+      "electricity_price": {
+        "name": "Electricity price"
+      },
+      "solar_forecast_today": {
+        "name": "Solar forecast today"
+      },
+      "solar_forecast_today_remaining": {
+        "name": "Solar forecast today remaining"
+      },
+      "solar_forecast_tomorrow": {
+        "name": "Solar forecast tomorrow"
+      },
+      "esp_temperature": {
+        "name": "ESP temperature"
+      },
+      "wifi_rssi": {
+        "name": "WiFi RSSI"
+      },
+      "last_restart": {
+        "name": "Last restart"
+      },
+      "voltage_l1_n": {
+        "name": "Voltage L1-N"
+      },
+      "voltage_l2_n": {
+        "name": "Voltage L2-N"
+      },
+      "voltage_l3_n": {
+        "name": "Voltage L3-N"
+      },
+      "voltage_dc": {
+        "name": "DC voltage"
+      },
+      "current_l1_im_ex_sum": {
+        "name": "Current L1"
+      },
+      "current_l1_im_ex_diff": {
+        "name": "Current L1"
+      },
+      "current_l2_im_ex_sum": {
+        "name": "Current L2"
+      },
+      "current_l2_im_ex_diff": {
+        "name": "Current L2"
+      },
+      "current_l3_im_ex_sum": {
+        "name": "Current L3"
+      },
+      "current_l3_im_ex_diff": {
+        "name": "Current L3"
+      },
+      "current_dc": {
+        "name": "DC current"
+      },
+      "power_active_l1_im_ex_diff": {
+        "name": "Power L1"
+      },
+      "power_active_l2_im_ex_diff": {
+        "name": "Power L2"
+      },
+      "power_active_l3_im_ex_diff": {
+        "name": "Power L3"
+      },
+      "power_active_l_sum_im_ex_diff": {
+        "name": "Power"
+      },
+      "power_dc": {
+        "name": "DC power"
+      },
+      "energy_active_l_sum_import": {
+        "name": "Energy import"
+      },
+      "energy_active_l_sum_export": {
+        "name": "Energy export"
+      },
+      "energy_active_l_sum_im_ex_sum": {
+        "name": "Energy"
+      },
+      "frequency_l_avg": {
+        "name": "Frequency"
+      },
+      "state_of_charge": {
+        "name": "State of charge"
+      },
+      "energy_dc_import": {
+        "name": "DC energy import"
+      },
+      "energy_dc_export": {
+        "name": "DC energy export"
+      },
+      "voltage_pv_avg": {
+        "name": "PV voltage"
+      },
+      "current_pv_sum_export": {
+        "name": "PV current"
+      },
+      "power_pv_sum_im_ex_diff": {
+        "name": "PV power"
+      },
+      "energy_pv_sum_export": {
+        "name": "PV energy"
+      },
+      "capacity": {
+        "name": "Capacity"
+      }
+    },
+    "binary_sensor": {
+      "plugged": {
+        "name": "Plugged"
+      },
+      "charging": {
+        "name": "Charging"
+      },
+      "problem": {
+        "name": "Problem"
+      },
+      "button_pressed": {
+        "name": "Button pressed"
+      },
+      "p14a_limited": {
+        "name": "P14A limited"
+      }
+    },
+    "number": {
+      "charging_current_limit": {
+        "name": "Charging current limit"
+      },
+      "charge_energy_limit": {
+        "name": "Charge energy limit"
+      },
+      "charge_soc_limit": {
+        "name": "Charge SoC limit"
+      },
+      "vehicle_soc": {
+        "name": "Vehicle SoC"
+      }
+    },
+    "switch": {
+      "auto_start_charging": {
+        "name": "Auto start charging"
+      },
+      "external_clear_on_disconnect": {
+        "name": "External clear on disconnect"
+      },
+      "boost_mode": {
+        "name": "Boost mode"
+      },
+      "phase_auto_switch": {
+        "name": "Phase auto switch"
+      }
+    },
+    "select": {
+      "charge_mode": {
+        "name": "Charge mode",
+        "state": {
+          "fast": "Fast",
+          "off": "Off",
+          "pv": "PV",
+          "min_pv": "Min + PV",
+          "default": "Default",
+          "min": "Min",
+          "eco": "Eco",
+          "eco_pv": "Eco + PV",
+          "eco_min": "Eco + Min",
+          "eco_min_pv": "Eco + Min + PV"
+        }
+      },
+      "phases": {
+        "name": "Phases",
+        "state": {
+          "single_phase": "1-phase",
+          "three_phase": "3-phase"
+        }
+      },
+      "charge_duration_limit": {
+        "name": "Charge duration limit",
+        "state": {
+          "off": "Off",
+          "15m": "15 minutes",
+          "30m": "30 minutes",
+          "45m": "45 minutes",
+          "1h": "1 hour",
+          "2h": "2 hours",
+          "3h": "3 hours",
+          "4h": "4 hours",
+          "6h": "6 hours",
+          "8h": "8 hours",
+          "12h": "12 hours"
+        }
+      }
+    },
+    "button": {
+      "start_charging": {
+        "name": "Start charging"
+      },
+      "stop_charging": {
+        "name": "Stop charging"
+      },
+      "restart_charge_limits": {
+        "name": "Restart charge limits"
+      },
+      "reboot": {
+        "name": "Reboot"
+      }
+    },
+    "event": {
+      "nfc_tag": {
+        "name": "NFC tag",
+        "state_attributes": {
+          "event_type": {
+            "state": {
+              "scanned": "Scanned"
+            }
+          },
+          "tag_id": {
+            "name": "Tag ID"
+          },
+          "tag_type": {
+            "name": "Tag type"
+          }
+        }
+      }
+    },
+    "update": {
+      "firmware": {
+        "name": "Firmware"
+      }
+    }
+  },
+  "exceptions": {
+    "command_failed": {
+      "message": "The charger rejected the command: {error}"
+    },
+    "cannot_connect": {
+      "message": "Cannot connect to the charger: {error}"
+    },
+    "invalid_auth": {
+      "message": "The charger rejected the credentials."
+    },
+    "current_too_low": {
+      "message": "Charging current must be 0 (pause) or between 6 and 32 amperes."
+    },
+    "install_vehicle_connected": {
+      "message": "Cannot install firmware while a vehicle is connected."
+    },
+    "install_failed": {
+      "message": "Firmware installation failed (state: {state})."
+    }
+  },
+  "issues": {
+    "too_many_clients": {
+      "title": "{name} keeps closing the connection",
+      "description": "The charger allows at most 5 simultaneous WebSocket clients (web interface tabs, evcc, other integrations) and has repeatedly dropped Home Assistant to make room for another. Close unused web interface tabs or other clients connected to the charger."
+    }
+  }
+}
