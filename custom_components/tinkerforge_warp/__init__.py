@@ -10,18 +10,23 @@ from aiohttp import DigestAuthMiddleware
 from homeassistant.const import CONF_PASSWORD, CONF_USERNAME, CONF_VERIFY_SSL, Platform
 from homeassistant.core import CALLBACK_TYPE, HomeAssistant, callback
 from homeassistant.exceptions import ConfigEntryAuthFailed, ConfigEntryNotReady
+from homeassistant.helpers import config_validation as cv
 from homeassistant.helpers import device_registry as dr
 from homeassistant.helpers import issue_registry as ir
 from homeassistant.helpers.aiohttp_client import async_create_clientsession
 from homeassistant.helpers.event import async_call_later
+from homeassistant.helpers.typing import ConfigType
 
 from warp_charger import WarpAuthError, WarpClient, WarpConnectionError
 
 from . import binary_sensor, button, event, number, select, sensor, switch, update
 from .const import CONF_URL, DOMAIN, PLATFORMS, RELOAD_DEBOUNCE
 from .entity import States, WarpConfigEntry, WarpRuntime
+from .frontend import async_register_card
 
 _LOGGER = logging.getLogger(__name__)
+
+CONFIG_SCHEMA = cv.config_entry_only_config_schema(DOMAIN)
 
 READY_TIMEOUT = 30
 
@@ -68,6 +73,12 @@ def _is_structure_topic(topic: str) -> bool:
     return (
         topic in STRUCTURE_TOPICS or topic.endswith("/config") or bool(_STRUCTURE_RE.match(topic))
     )
+
+
+async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
+    """Register the Lovelace card."""
+    await async_register_card(hass)
+    return True
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: WarpConfigEntry) -> bool:

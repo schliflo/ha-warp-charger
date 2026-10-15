@@ -1,6 +1,7 @@
 {
   "domain": "tinkerforge_warp",
   "name": "Tinkerforge WARP",
+  "after_dependencies": ["frontend", "http"],
   "codeowners": ["@schliflo"],
   "config_flow": true,
   "dependencies": ["tag"],

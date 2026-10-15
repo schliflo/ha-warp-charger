@@ -41,6 +41,24 @@ Host and credentials can be changed later via *Reconfigure*.
 - **Energy management:** §14a EnWG limit, day-ahead price, solar forecast.
 - **Maintenance:** firmware update entity (checks daily, installs from HA), reboot button, diagnostics download.
 
+## Dashboard card
+
+The integration ships a **WARP Charger** card (loaded automatically, no resource to add): charger state steps as in the web interface, power with L1/L2/L3 phase indicators, session energy/duration/NFC user, charge limit progress, vehicle SoC, current limit, charge mode, 1p/3p, boost and start/stop. Add it via *Edit dashboard → Add card → WARP Charger*, or:
+
+```yaml
+type: custom:warp-charger-card
+device: <device_id>      # picked in the card editor
+name: Garage             # optional
+show_controls: true      # optional, false = status only
+```
+
+Controls appear only for entities that exist and are enabled.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/schliflo/ha-warp-charger/main/docs/card-light.png" alt="WARP Charger card while charging, light theme" width="380">
+  <img src="https://raw.githubusercontent.com/schliflo/ha-warp-charger/main/docs/card-dark.png" alt="WARP Charger card while charging, dark theme" width="380">
+</p>
+
 ## How data is updated
 
 The charger pushes every state change over its WebSocket (at most once per second per topic); entities only write a new state when their value changes. Commands are sent via HTTP and the resulting state arrives through the push channel. If the connection drops, entities stay available for 30 s (rides out reboots), then become unavailable until the connection is back.
