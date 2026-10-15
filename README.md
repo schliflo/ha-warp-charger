@@ -54,6 +54,11 @@ show_controls: true      # optional, false = status only
 
 Controls appear only for entities that exist and are enabled.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/schliflo/ha-warp-charger/main/docs/card-light.png" alt="WARP Charger card while charging, light theme" width="380">
+  <img src="https://raw.githubusercontent.com/schliflo/ha-warp-charger/main/docs/card-dark.png" alt="WARP Charger card while charging, dark theme" width="380">
+</p>
+
 ## How data is updated
 
 The charger pushes every state change over its WebSocket (at most once per second per topic); entities only write a new state when their value changes. Commands are sent via HTTP and the resulting state arrives through the push channel. If the connection drops, entities stay available for 30 s (rides out reboots), then become unavailable until the connection is back.
