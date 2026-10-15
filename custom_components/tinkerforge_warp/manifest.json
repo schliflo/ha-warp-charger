@@ -11,7 +11,7 @@
   "issue_tracker": "https://github.com/schliflo/ha-warp-charger/issues",
   "loggers": ["warp_charger"],
   "requirements": ["warp-charger==0.1.0"],
-  "version": "0.1.0",
+  "version": "0.2.0",
   "zeroconf": [
     {
       "type": "_http._tcp.local.",
