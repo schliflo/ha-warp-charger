@@ -2,6 +2,7 @@
   "domain": "tinkerforge_warp",
   "name": "Tinkerforge WARP",
   "codeowners": ["@schliflo"],
+  "after_dependencies": ["frontend", "http"],
   "config_flow": true,
   "dependencies": ["tag"],
   "documentation": "https://github.com/schliflo/ha-warp-charger",
