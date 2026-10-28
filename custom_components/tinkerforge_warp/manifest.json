@@ -10,7 +10,7 @@
   "iot_class": "local_push",
   "issue_tracker": "https://github.com/schliflo/ha-warp-charger/issues",
   "loggers": ["warp_charger"],
-  "requirements": ["warp-charger==0.1.0"],
+  "requirements": ["warp-charger==0.1.1"],
   "version": "0.2.0",
   "zeroconf": [
     {
