@@ -1,6 +1,7 @@
 """Update platform tests (firmware)."""
 
 import logging
+from collections.abc import Iterator
 from datetime import timedelta
 from unittest.mock import patch
 
@@ -9,6 +10,7 @@ from homeassistant.components.update import (
     ATTR_IN_PROGRESS,
     ATTR_INSTALLED_VERSION,
     ATTR_LATEST_VERSION,
+    ATTR_RELEASE_URL,
     ATTR_UPDATE_PERCENTAGE,
     SERVICE_INSTALL,
 )
@@ -27,10 +29,16 @@ from homeassistant.core import HomeAssistant
 from homeassistant.exceptions import HomeAssistantError
 from homeassistant.helpers import entity_registry as er
 from pytest_homeassistant_custom_component.common import async_capture_events, snapshot_platform
+from pytest_homeassistant_custom_component.test_util.aiohttp import AiohttpClientMocker
+from pytest_homeassistant_custom_component.typing import WebSocketGenerator
 from syrupy.assertion import SnapshotAssertion
 
 from custom_components.tinkerforge_warp.const import DOMAIN
-from custom_components.tinkerforge_warp.update import CHECK_INTERVAL
+from custom_components.tinkerforge_warp.update import (
+    CHANGELOG_RAW_URL,
+    CHANGELOG_URL,
+    CHECK_INTERVAL,
+)
 from tests.common import (
     FIXTURES,
     check_availability_cycle,
@@ -306,3 +314,69 @@ async def test_availability(hass: HomeAssistant, fake_warp: FakeWarpFactory) -> 
     eid = entity_id(hass, "update", fake, "firmware") or ""
     await check_availability_cycle(hass, fake, [eid])
     assert _state(hass, fake).state == STATE_ON
+
+
+@pytest.fixture
+def changelog(hass: HomeAssistant) -> Iterator[AiohttpClientMocker]:
+    """Mock only the changelog download; the device keeps its real connection."""
+    mocker = AiohttpClientMocker()
+    with patch(
+        "custom_components.tinkerforge_warp.update.async_get_clientsession",
+        return_value=mocker.create_session(hass.loop),
+    ):
+        yield mocker
+
+
+CHANGELOG_TEXT = """2026-07-09: 2.12.1 (e04a6ee0)
+- Old fix
+
+2026-09-10: 2.13.0 (6870f31b)
+- New feature
+
+2026-10-01: 2.13.5 (098f202e)
+- Latest fix
+
+2026-10-27: 2.13.6 (afa5c782)
+- Not offered yet
+"""
+
+
+async def test_release_notes(
+    hass: HomeAssistant,
+    fake_warp: FakeWarpFactory,
+    changelog: AiohttpClientMocker,
+    hass_ws_client: WebSocketGenerator,
+) -> None:
+    """Release notes list the changelog entries after the installed up to the offered version."""
+    changelog.get(CHANGELOG_RAW_URL.format("warp3"), text=CHANGELOG_TEXT)
+    fake = await fake_warp("warp3")
+    await _setup(hass, fake)
+    state = _state(hass, fake)
+    assert state.attributes[ATTR_RELEASE_URL] == CHANGELOG_URL.format("warp3")
+
+    client = await hass_ws_client(hass)
+    await client.send_json_auto_id({"type": "update/release_notes", "entity_id": state.entity_id})
+    result = await client.receive_json()
+    assert result["result"] == (
+        "**2026-10-01: 2.13.5 (098f202e)**\n\n- Latest fix\n\n"
+        "**2026-09-10: 2.13.0 (6870f31b)**\n\n- New feature"
+    )
+
+
+async def test_release_notes_unavailable(
+    hass: HomeAssistant,
+    fake_warp: FakeWarpFactory,
+    changelog: AiohttpClientMocker,
+    hass_ws_client: WebSocketGenerator,
+) -> None:
+    """A failed changelog download gives no release notes instead of an error."""
+    changelog.get(CHANGELOG_RAW_URL.format("energy_manager_v2"), status=404)
+    fake = await fake_warp("wem2")
+    await _setup(hass, fake)
+    client = await hass_ws_client(hass)
+    await client.send_json_auto_id(
+        {"type": "update/release_notes", "entity_id": _state(hass, fake).entity_id}
+    )
+    result = await client.receive_json()
+    assert result["success"] is True
+    assert result["result"] is None
