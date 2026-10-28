@@ -4,6 +4,9 @@ updates:
     directory: /
     schedule:
       interval: weekly
+    cooldown:
+      default-days: 3  # GitHub default; own lib exempt
+      exclude: ["warp-charger"]
     groups:
       warp-charger:
         patterns: ["warp-charger"]
