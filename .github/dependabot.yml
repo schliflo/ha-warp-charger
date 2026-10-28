@@ -5,11 +5,13 @@ updates:
     schedule:
       interval: weekly
     groups:
+      warp-charger:
+        patterns: ["warp-charger"]
       home-assistant:
         patterns: ["pytest-homeassistant-custom-component", "homeassistant"]
       dev:
         dependency-type: development
-        exclude-patterns: ["pytest-homeassistant-custom-component", "homeassistant"]
+        exclude-patterns: ["pytest-homeassistant-custom-component", "homeassistant", "warp-charger"]
   - package-ecosystem: github-actions
     directory: /
     schedule:

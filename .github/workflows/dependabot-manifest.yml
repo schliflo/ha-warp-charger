@@ -1,0 +1,33 @@
+name: Dependabot manifest sync
+
+# Dependabot bumps warp-charger in pyproject.toml/uv.lock only; copy the pin into manifest.json.
+# pull_request_target for a writable token; no PR code is executed.
+on:
+  pull_request_target:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  sync:
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+      - name: Sync pin
+        env:
+          BRANCH: ${{ github.event.pull_request.head.ref }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          pin=$(grep -o 'warp-charger==[^"]*' pyproject.toml)
+          sed -i "s/warp-charger==[^\"]*/$pin/" custom_components/tinkerforge_warp/manifest.json
+          git diff --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Sync manifest.json to $pin"
+          git push
+          # Pushes with GITHUB_TOKEN don't trigger CI; a dispatch does.
+          gh workflow run ci.yml --ref "$BRANCH"
