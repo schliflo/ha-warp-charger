@@ -1143,7 +1143,7 @@ dev = [
 dev = [
     { name = "pytest-homeassistant-custom-component", specifier = "==0.13.374" },
     { name = "ruff" },
-    { name = "warp-charger", specifier = "==0.1.0" },
+    { name = "warp-charger", specifier = "==0.1.1" },
 ]
 
 [[package]]
@@ -3080,14 +3080,14 @@ wheels = [
 
 [[package]]
 name = "warp-charger"
-version = "0.1.0"
+version = "0.1.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/bc/1f/ffe839ee661521905adce11f2cbb7836136d73668033d062e9083a93be27/warp_charger-0.1.0.tar.gz", hash = "sha256:cdbe4b52835089b0c8545578bc63f470777dabd025cd524e125d21d946d7e890", size = 21089, upload-time = "2026-10-10T11:30:23.786Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b4/f3/5332f0da3e0bafe962b47d6aadff07d3f14d4436b5168d4fce2fc8a5d51a/warp_charger-0.1.1.tar.gz", hash = "sha256:1189f4e9a5b92ea43241870f914084794e8e78f1a80cf4e7fbe755889387f7e0", size = 21093, upload-time = "2026-10-27T20:57:35.708Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1f/88/55ba2c1031dfbebfe26f88cbfdefa7157a82ae2583de0b4d67fb8af27873/warp_charger-0.1.0-py3-none-any.whl", hash = "sha256:00f1976daa71e97cafafaca1d6ef3e1c8816ca993e030cac9177ef9e1f971f22", size = 12661, upload-time = "2026-10-10T11:30:21.336Z" },
+    { url = "https://files.pythonhosted.org/packages/c0/c2/a772aa1b45e6a165715f0d0a8aad74dcd40fbe425c02ad6055605da24161/warp_charger-0.1.1-py3-none-any.whl", hash = "sha256:5bc64af2b88b29cdfba8422b91092f2caf9c41e3c7e43aabe16e4f0d742e1a20", size = 12662, upload-time = "2026-10-27T20:57:34.301Z" },
 ]
 
 [[package]]
