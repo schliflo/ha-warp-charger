@@ -8,7 +8,7 @@ dependencies = []
 [dependency-groups]
 dev = [
     "warp-charger==0.1.1",  # keep in sync with manifest.json (tests/test_manifest.py)
-    "pytest-homeassistant-custom-component==0.13.374",
+    "pytest-homeassistant-custom-component==0.13.375",
     "ruff",
 ]
 
