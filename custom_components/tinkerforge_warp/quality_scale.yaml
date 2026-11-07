@@ -6,8 +6,8 @@ rules:
     status: exempt
     comment: "Push only: one WebSocket feeds all entities, no polling."
   brands:
-    status: todo
-    comment: "Brand assets are not submitted yet."
+    status: done
+    comment: "Icon and logos ship in brand/."
   common-modules:
     status: done
     comment: "entity.py holds the shared runtime and base entity; there is no coordinator."
@@ -16,8 +16,8 @@ rules:
     status: done
     comment: "tests/test_config_flow.py covers config_flow.py completely."
   dependency-transparency:
-    status: todo
-    comment: "warp-charger is not published to PyPI with a tagged source and CI release yet."
+    status: done
+    comment: "warp-charger is MIT, public on GitHub and published to PyPI from tagged CI releases."
   docs-actions:
     status: exempt
     comment: "The integration registers no actions."

@@ -2,6 +2,7 @@
   "domain": "tinkerforge_warp",
   "name": "Tinkerforge WARP",
   "after_dependencies": ["frontend", "http"],
+  "categories": ["energy.ev_charging"],
   "codeowners": ["@schliflo"],
   "config_flow": true,
   "dependencies": ["tag"],

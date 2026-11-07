@@ -15,9 +15,10 @@ Entities appear only when the device supports and enables the feature (e.g. phas
 
 ## Installation
 
-1. HACS → *Integrations* → ⋮ → *Custom repositories* → add this repository as *Integration*.
-2. Install **Tinkerforge WARP**, restart Home Assistant.
-3. The charger is discovered automatically (zeroconf). Otherwise: *Settings → Devices & services → Add integration → Tinkerforge WARP*.
+1. *Settings → Marketplace* → install **Tinkerforge WARP**. Until it is in the catalog, add `https://github.com/schliflo/ha-warp-charger` as a custom repository first. On Home Assistant before 2026.11, use HACS the same way and restart afterwards.
+2. The charger is discovered automatically (zeroconf). Otherwise:
+
+   [![Add integration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=tinkerforge_warp)
 
 ### Configuration parameters
 
@@ -114,7 +115,7 @@ automation:
 
 ## Removal
 
-*Settings → Devices & services → Tinkerforge WARP → ⋮ → Delete*, then remove it in HACS. Nothing is changed on the charger.
+*Settings → Devices & services → Tinkerforge WARP → ⋮ → Delete*, then remove it in the Marketplace (or HACS) and restart. Nothing is changed on the charger.
 
 ## Development
 
